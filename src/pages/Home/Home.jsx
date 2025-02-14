@@ -1,7 +1,7 @@
 import { useState } from "react";
-import Navbar from "/components/Navbar";
-import Hero from "/components/Hero";
-import About from "/components/About";
+import Navbar from "./Components/Navbar";
+import Hero from "./Components/Hero";
+import About from "./Components/About";
 
 function Home() {
   const [requestBody, requestBodySet] = useState({
