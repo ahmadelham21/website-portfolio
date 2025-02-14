@@ -7,7 +7,11 @@ function Home() {
   return (
     <>
       <div>name : {requestBody.name}</div>
-      <button onClick={() => requestBodySet({ ...requestBody, name: "Keren" })}>
+      <button
+        onClick={() =>
+          requestBodySet({ ...requestBody, name: "ilham ganteng" })
+        }
+      >
         click me
       </button>
     </>
