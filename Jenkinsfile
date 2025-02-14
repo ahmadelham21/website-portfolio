@@ -25,8 +25,8 @@ pipeline {
       steps {
         script {
           // Hentikan container lama jika ada
-          bat 'docker stop react-app || true'
-          bat 'docker rm react-app || true'
+            bat 'powershell -Command "docker stop react-app -ErrorAction SilentlyContinue"'
+          bat 'powershell -Command "docker rm react-app -ErrorAction SilentlyContinue"'
 
           // Jalankan container baru
           bat "docker run -d --name react-app -p 3000:80 ${DOCKER_IMAGE}:${DOCKER_TAG}"
