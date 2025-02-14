@@ -25,11 +25,11 @@ pipeline {
       steps {
         script {
           // Hentikan container lama jika ada
-          sh 'docker stop react-app || true'
-          sh 'docker rm react-app || true'
+          bat 'docker stop react-app || true'
+          bat 'docker rm react-app || true'
 
           // Jalankan container baru
-          sh "docker run -d --name react-app -p 3000:80 ${DOCKER_IMAGE}:${DOCKER_TAG}"
+          bat "docker run -d --name react-app -p 3000:80 ${DOCKER_IMAGE}:${DOCKER_TAG}"
         }
       }
     }
