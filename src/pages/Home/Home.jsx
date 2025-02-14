@@ -9,7 +9,7 @@ function Home() {
       <div>name : {requestBody.name}</div>
       <button
         onClick={() =>
-          requestBodySet({ ...requestBody, name: "ilham ganteng banget" })
+          requestBodySet({ ...requestBody, name: "Testing perubahan" })
         }
       >
         click me

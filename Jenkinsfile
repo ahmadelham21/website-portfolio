@@ -25,8 +25,8 @@ pipeline {
       steps {
         script {
           // Hentikan container lama jika ada
-    //    bat 'powershell -Command "try { docker stop react-app } catch { Write-Output \'Container tidak ditemukan, melanjutkan...\' }"'
-    //       bat 'powershell -Command "try { docker rm react-app } catch { Write-Output \'Container tidak ditemukan, melanjutkan...\' }"'
+       bat 'powershell -Command "try { docker stop react-app } catch { Write-Output \'Container tidak ditemukan, melanjutkan...\' }"'
+          bat 'powershell -Command "try { docker rm react-app } catch { Write-Output \'Container tidak ditemukan, melanjutkan...\' }"'
 
 
           // Jalankan container baru
