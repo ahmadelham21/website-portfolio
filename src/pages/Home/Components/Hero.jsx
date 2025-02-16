@@ -19,7 +19,7 @@ const Hero = () => {
         Welcome to My Portfolio
       </Typography>
       <Typography variant="h5" component="h2" gutterBottom>
-        I'm a Full Stack Developer
+        I'm a Full Stack Developer @ Maybank Finance
       </Typography>
       <Button variant="contained" color="primary" size="large">
         View My Work
