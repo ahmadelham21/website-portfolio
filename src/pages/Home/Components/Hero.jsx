@@ -23,7 +23,7 @@ const Hero = () => {
         I'm a Full Stack Developer @ Maybank Finance
       </Typography>
     <Typography variant="h5" component="h2" gutterBottom>
-        Albert akan kembali
+        Albert tidak akan kembali
       </Typography>
       <Button variant="contained" color="primary" size="large">
         View My Work
